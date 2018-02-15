@@ -5,6 +5,8 @@ import java.awt.GridLayout;
 import java.awt.Panel;
 import java.awt.TextField;
 
+import javax.swing.JFrame;
+
 public class CalcDesign {
 
 	public static void main(String[] args) {
@@ -17,10 +19,14 @@ public class CalcDesign {
 		GridLayout G = new GridLayout(4, 4);
 		P2.setLayout(G);
 		
-		TextField screen = new TextField(10);;
+		TextField screen = new TextField(10);
+		screen.setEditable(false);
+		
 		
 		Button B0,B1,B2,B3,B4,B5,B6,B7,B8,B9;
 		Button BPlus, BMinus, BDiv, BMul, BClear, BEquals;
+		
+		
 		
 		B0 = new Button("0");
 		B1 = new Button("1");

@@ -11,7 +11,7 @@ public class Operations implements ActionListener {
 	public Operations(TextField A) {
 		T1 = A;
 	}
-	
+
 	public void actionPerformed(ActionEvent AE) {
 		Button btn = (Button) AE.getSource();
 		String L = btn.getLabel();
